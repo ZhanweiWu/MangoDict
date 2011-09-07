@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- TouchInterceptor.java -->
+    <dimen name="normal_height">48dp</dimen>
+    <dimen name="expanded_height">96dp</dimen>
+
+</resources>

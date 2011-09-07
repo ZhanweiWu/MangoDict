@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:scrollbars="vertical">
+
+	<LinearLayout android:orientation="vertical"
+		android:padding="3dp" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+
+		<TableLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:stretchColumns="1">
+			<TableRow>
+				<TextView android:text="@string/card_info"
+					android:textStyle="bold" android:gravity="right" android:padding="3dp" />
+			</TableRow>
+			<TableRow>
+				<TextView android:text="@string/grade" android:textStyle="bold"
+					android:gravity="right" android:padding="3dp" />
+
+				<TextView android:id="@+id/gradeTxt" android:textStyle="bold"
+					android:gravity="right" android:padding="3dp" />
+			</TableRow>
+			<TableRow>
+				<TextView android:text="@string/easiness"
+					android:textStyle="bold" android:gravity="right" android:padding="3dp" />
+
+				<TextView android:id="@+id/easinessTxt" android:textStyle="bold"
+					android:gravity="right" android:padding="3dp" />
+			</TableRow>
+			<TableRow>
+				<TextView android:text="@string/repetitions"
+					android:textStyle="bold" android:gravity="right" android:padding="3dp" />
+
+				<TextView android:id="@+id/repetitionsTxt"
+					android:textStyle="bold" android:gravity="right" android:padding="3dp" />
+			</TableRow>
+			<TableRow>
+				<TextView android:text="@string/lapses" android:textStyle="bold"
+					android:gravity="right" android:padding="3dp" />
+
+				<TextView android:id="@+id/lapsesTxt" android:textStyle="bold"
+					android:gravity="right" android:padding="3dp" />
+			</TableRow>
+			<TableRow>
+				<TextView android:text="@string/dayssincelastrep"
+					android:textStyle="bold" android:gravity="right" android:padding="3dp" />
+
+				<TextView android:id="@+id/dayssincelastrepTxt"
+					android:textStyle="bold" android:gravity="right" android:padding="3dp" />
+			</TableRow>
+			<TableRow>
+				<TextView android:text="@string/dayssincenextrep"
+					android:textStyle="bold" android:gravity="right" android:padding="3dp" />
+
+				<TextView android:id="@+id/dayssincenextrepTxt"
+					android:textStyle="bold" android:gravity="right" android:padding="3dp" />
+			</TableRow>
+
+		</TableLayout>
+
+		<TableLayout android:layout_width="fill_parent"
+			android:paddingTop="6dp" android:layout_height="wrap_content"
+			android:stretchColumns="1">
+			<TableRow>
+				<TextView android:text="@string/grade_info"
+					android:textStyle="bold" android:gravity="right" android:padding="3dp" />
+			</TableRow>
+			<TableRow>
+				<TextView android:text="@string/grade0" android:textStyle="bold"
+					android:gravity="right" android:padding="3dp" />
+
+				<TextView android:id="@+id/grade0Txt" android:textStyle="bold"
+					android:gravity="right" android:padding="3dp" />
+			</TableRow>
+			<TableRow>
+				<TextView android:text="@string/grade1" android:textStyle="bold"
+					android:gravity="right" android:padding="3dp" />
+
+				<TextView android:id="@+id/grade1Txt" android:textStyle="bold"
+					android:gravity="right" android:padding="3dp" />
+			</TableRow>
+			<TableRow>
+				<TextView android:text="@string/grade2" android:textStyle="bold"
+					android:gravity="right" android:padding="3dp" />
+
+				<TextView android:id="@+id/grade2Txt" android:textStyle="bold"
+					android:gravity="right" android:padding="3dp" />
+			</TableRow>
+			<TableRow>
+				<TextView android:text="@string/grade3" android:textStyle="bold"
+					android:gravity="right" android:padding="3dp" />
+
+				<TextView android:id="@+id/grade3Txt" android:textStyle="bold"
+					android:gravity="right" android:padding="3dp" />
+			</TableRow>
+			<TableRow>
+				<TextView android:text="@string/grade4" android:textStyle="bold"
+					android:gravity="right" android:padding="3dp" />
+
+				<TextView android:id="@+id/grade4Txt" android:textStyle="bold"
+					android:gravity="right" android:padding="3dp" />
+			</TableRow>
+			<TableRow>
+				<TextView android:text="@string/grade5" android:textStyle="bold"
+					android:gravity="right" android:padding="3dp" />
+
+				<TextView android:id="@+id/grade5Txt" android:textStyle="bold"
+					android:gravity="right" android:padding="3dp" />
+			</TableRow>
+		</TableLayout>
+
+		<TableLayout android:layout_width="fill_parent"
+			android:paddingTop="6dp" android:layout_height="wrap_content"
+			android:stretchColumns="1">
+			<TableRow>
+				<TextView android:text="@string/progress"
+					android:textStyle="bold" android:gravity="right" android:padding="3dp" />
+				<TextView android:id="@+id/progressTxt" android:textStyle="bold"
+					android:gravity="right" android:padding="3dp" />
+			</TableRow>
+			<TableRow>
+				<TextView android:text="@string/dateofstart"
+					android:textStyle="bold" android:gravity="right" android:padding="3dp" />
+				<TextView android:id="@+id/dateOfStartTxt"
+					android:textStyle="bold" android:gravity="right" android:padding="3dp" />
+			</TableRow>
+		</TableLayout>
+
+	</LinearLayout>
+</ScrollView>

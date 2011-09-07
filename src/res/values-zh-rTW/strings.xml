@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">芒果詞典</string>
+    <string name="memorize_name">芒果記憶</string>
+    <string name="fuzzy_query_prompt">按下單詞列表按鈕進行模糊查詢。</string>
+    <string name="fulltext_query_prompt">按下單詞列表按鈕進行全文檢索。</string>
+    <string name="pattern_query_prompt">按下單詞列表按鈕進行通配符匹配查詢。</string>
+    <string name="keywords_null">沒有找到任何單詞。</string>
+    <string name="spell_error">請檢查您的拼寫是否正確。</string>
+    <string name="keywords_search">查詢中...</string>
+    <string name="readme_text">使用指南:&lt;br&gt;&lt;br&gt;
+       1. 通配符匹配:&lt;br&gt;
+                  用戶可以輸入帶有「*」和「?」的字符串，作為通配符匹配。「*」表示任意個字符；「?」表示某一個字符。按下單詞列表按鈕後，在左邊的列表框中即會出現匹配此規則的單詞。&lt;br&gt;&lt;br&gt;
+       2. 模糊查詢:&lt;br&gt;
+                  當你記不清楚某個單詞的具體拼寫時，還可以嘗試模糊查詢。此方式使用「Levenshtein Edit Distance」計算兩個單詞的相似度，最後給出和輸入單詞最相似的匹配結果，你只需在所查的單詞前加一個「/」，按下單詞列表按鈕即可。&lt;br&gt;&lt;br&gt;
+       3. 全文檢索:&lt;br&gt;
+                  全文檢索在數據裡搜索單詞。要進行全文檢索，只需在所查的單詞前加一個「:」，然後按下單詞列表按鈕。比如，「:ab cd」搜索包含「ab」和「cd」的數據。如果單詞裡有空格符，你可以使用「\\ 」，比如「:apple\\ pie」，其它的轉義字符是「\\\\」表示「\\」，「\\t」表示製表符，「\\n」表示新行。&lt;br&gt;&lt;br&gt;
+                  項目：http://code.google.com/p/mangodict/ &lt;br&gt;
+                  作者：Zhanwei Wu &lt;br&gt;
+                  郵件：jeffrey.wuzw@gmail.com &lt;br&gt;
+       MSN : wingfancy@hotmail.com &lt;br&gt;
+       Copyright c 2011 by Zhanwei WU
+    </string>
+    <string name="setting">設置</string>
+    <string name="capture">取詞</string>
+    <string name="index">索引</string>
+    <string name="memorize">記憶</string>
+    <string name="play_word">播放單詞</string>
+    <string name="play_text">播放剪切板內容</string>
+    <string name="his_words">歷史記錄</string>
+    <string name="add_word">增加生詞</string>
+    <string name="new_words">生詞表</string>
+    <string name="findonpage">頁內查找</string>
+    <string name="cancel">取消</string>
+    <string name="dictpath">路徑...</string>
+    <string name="bgcolor">背景顏色</string>
+    <string name="textcolor">文本顏色</string>
+    <string name="wordcolor">單詞顏色</string>
+    <string name="sampletext">文本例子</string>
+    <string name="wordtext">單詞例子</string>
+    <string name="dictiscapture">剪切板內容取詞</string>
+    <string name="saved">保存成功!</string>
+    <plurals name="matches_found">
+        <item quantity="zero">沒有匹配單詞</item>
+        <item quantity="one">找到 1 個</item>
+        <item quantity="few">找到 <xliff:g id="number" example="2">%d</xliff:g> 個</item>
+        <item quantity="other">找到 <xliff:g id="number" example="137">%d</xliff:g> 個</item>
+    </plurals>
+
+    <string name="recording">錄音中...</string>
+    <string name="press_record">請錄音</string>
+    <string name="playing">播放中...</string>
+
+    <string name="grade_F">不知道</string>
+    <string name="grade_E"> 差 </string>
+    <string name="grade_D">有印象</string>
+    <string name="grade_C">還行</string>
+    <string name="grade_B"> 好 </string>
+    <string name="grade_A">優秀</string>
+    <string name="showanswer">顯示結果</string>
+    <string name="memorizeselect">選擇課程</string>
+    <string name="learnscheduledcard">計劃卡片</string>
+    <string name="learnnewcard">新卡片</string>
+    <string name="learnaheadcard">舊卡片</string>
+    <string name="memerizeconfig">設置</string>
+    <string name="schedule">計劃</string>
+    <string name="statistic">統計</string>
+    <string name="noschedulecard">沒有計劃內卡片需要學習，需要學習新卡片嗎？</string>
+    <string name="nonewcard">沒有新卡片可以學習，需要學習舊卡片嗎？</string>
+    <string name="nocard">沒有可以學習的卡片了，是否需要選擇新課程？</string>
+    <string name="numbergrade0">每次 0 級卡片最大個數: </string>
+    <string name="maxnewcards">每次學習新卡片個數: </string>
+    <string name="maxcards">每次學習卡片最大個數: </string>
+    <string name="randomnewcards">隨機顯示新卡片: </string>
+
+    <string name="grade_info">卡片等級: </string>
+    <string name="grade0">0 級: </string>
+    <string name="grade1">1 級: </string>
+    <string name="grade2">2 級: </string>
+    <string name="grade3">3 級: </string>
+    <string name="grade4">4 級: </string>
+    <string name="grade5">5 級: </string>
+
+    <string name="card_info">當前卡片信息: </string>
+    <string name="grade">等級: </string>
+    <string name="easiness">難度: </string>
+    <string name="repetitions">重複次數: </string>
+    <string name="lapses">錯過次數: </string>
+    <string name="dayssincelastrep">自從上次學習的天數: </string>
+    <string name="dayssincenextrep">離下次學習的天數: </string>
+    
+    <string name="progress">進度: </string>
+    <string name="dateofstart">開始學習日期: </string>
+    <string name="date_format">yyyy年MM月dd日</string>
+
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">取色</string>
+    <string name="press_color_to_apply">選擇顏色</string>
+</resources>

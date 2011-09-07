@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<LinearLayout android:id="@+id/parentView"
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+		<LinearLayout android:orientation="horizontal"
+			android:id="@+id/answerBarLayout" android:layout_width="fill_parent"
+			android:layout_height="84dp" android:background="@drawable/style_bg"
+			android:layout_gravity="center_vertical|center_horizontal">
+			<Button android:id="@+id/showAnswerBtn" android:text="@string/showanswer"
+				android:layout_weight="1" android:background="@drawable/style_button_center"
+				android:textColor="#FFFFFFFF" android:layout_width="wrap_content"
+				android:layout_height="fill_parent"></Button>
+		</LinearLayout>
+
+		<TableLayout android:background="@drawable/style_bg"
+			android:id="@+id/gradeBarLayout" android:visibility="visible"
+			android:layout_gravity="center_vertical|center_horizontal"
+			android:layout_width="fill_parent" android:layout_height="84dp">
+
+			<TableRow android:layout_weight="1">
+				<Button android:id="@+id/gradeFBtn" android:text="@string/grade_F"
+					android:layout_weight="1" android:padding="1dp"
+					android:background="@drawable/style_button_left" android:textColor="#FFFFFFFF"
+					android:layout_width="wrap_content" android:layout_height="fill_parent"></Button>
+
+				<ImageView android:layout_width="1dp"
+					android:layout_height="fill_parent" android:background="@drawable/style_divider" />
+
+				<Button android:id="@+id/gradeEBtn" android:text="@string/grade_E"
+					android:layout_weight="1" android:padding="1dp"
+					android:background="@drawable/style_button_center"
+					android:textColor="#FFFFFFFF" android:layout_width="wrap_content"
+					android:layout_height="fill_parent"></Button>
+
+				<ImageView android:layout_width="1dp"
+					android:layout_height="fill_parent" android:background="@drawable/style_divider" />
+
+				<Button android:id="@+id/gradeDBtn" android:text="@string/grade_D"
+					android:layout_weight="1" android:padding="1dp"
+					android:background="@drawable/style_button_right"
+					android:textColor="#FFFFFFFF" android:layout_width="wrap_content"
+					android:layout_height="fill_parent"></Button>
+
+			</TableRow>
+			<TableRow android:background="@drawable/style_divider">
+			</TableRow>
+			<TableRow android:layout_weight="1">
+				<Button android:id="@+id/gradeCBtn" android:text="@string/grade_C"
+					android:layout_weight="1" android:padding="1dp"
+					android:background="@drawable/style_button_left" android:textColor="#FFFFFFFF"
+					android:layout_width="wrap_content" android:layout_height="fill_parent"></Button>
+
+				<ImageView android:layout_width="1dp"
+					android:layout_height="fill_parent" android:background="@drawable/style_divider" />
+
+				<Button android:id="@+id/gradeBBtn" android:text="@string/grade_B"
+					android:layout_weight="1" android:padding="1dp"
+					android:background="@drawable/style_button_center"
+					android:textColor="#FFFFFFFF" android:layout_width="wrap_content"
+					android:layout_height="fill_parent"></Button>
+
+				<ImageView android:layout_width="1dp"
+					android:layout_height="fill_parent" android:background="@drawable/style_divider" />
+
+				<Button android:id="@+id/gradeABtn" android:text="@string/grade_A"
+					android:layout_weight="1" android:padding="1dp"
+					android:background="@drawable/style_button_right"
+					android:textColor="#FFFFFFFF" android:layout_width="wrap_content"
+					android:layout_height="fill_parent"></Button>
+			</TableRow>
+		</TableLayout>
+
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="fill_parent" android:layout_height="22dp"
+			android:layout_gravity="center_vertical|center_horizontal">
+			<TextView android:id="@+id/memorizeTxtView"
+				android:textColor="#FF0000FF" android:layout_width="fill_parent"
+				android:layout_weight="1" android:layout_height="fill_parent"
+				android:layout_gravity="center_vertical|center_horizontal"
+				android:gravity="center_vertical" android:paddingLeft="6dp"></TextView>
+
+			<TextView android:id="@+id/memorizeStatusView"
+				android:textColor="#FF0000FF" android:layout_width="fill_parent"
+				android:layout_weight="1" android:layout_height="fill_parent"
+				android:paddingRight="6dp" android:layout_gravity="right|center_vertical"
+				android:gravity="right|center_vertical"></TextView>
+		</LinearLayout>
+	</LinearLayout>
+	<WebView android:id="@+id/dictContentView"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"></WebView>
+</LinearLayout>

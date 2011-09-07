@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<View android:layout_width="1dp" android:background="#FF000000"
+		android:id="@+id/lineView0" android:layout_height="fill_parent"></View>
+
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="wrap_content" android:layout_weight="2"
+		android:layout_height="fill_parent">
+
+		<View android:layout_width="fill_parent" android:background="#FF000000"
+			android:id="@+id/lineView1" android:layout_height="1dp"></View>
+
+		<LinearLayout android:layout_width="fill_parent" android:id="@+id/parentView"
+			android:layout_height="42dp">
+			<ImageButton android:layout_width="48dp"
+				android:background="@drawable/style_button_center"
+				android:scaleType="center" android:layout_height="fill_parent"
+				android:src="@drawable/ic_btn_move" android:id="@+id/windowMoveBtn"></ImageButton>
+
+			<ImageView android:layout_width="1dp"
+				android:layout_height="fill_parent" android:background="@drawable/style_divider" />
+
+			<EditText android:id="@+id/keywordTxt" android:padding="3dp"
+				android:background="@drawable/edit_text" android:layout_width="wrap_content"
+				android:layout_height="38dp" android:layout_weight="1"
+				android:textColor="#FF0000FF" android:layout_gravity="center_vertical"
+				android:gravity="center_vertical" android:inputType="text"></EditText>
+
+			<ImageView android:layout_width="1dp"
+				android:layout_height="fill_parent" android:background="@drawable/style_divider" />
+
+			<ImageButton android:layout_width="48dp"
+				android:src="@drawable/ic_btn_search" android:background="@drawable/style_button_center"
+				android:scaleType="center" android:id="@+id/windowSchBtn"
+				android:layout_height="fill_parent"></ImageButton>
+
+			<ImageView android:layout_width="1dp"
+				android:layout_height="fill_parent" android:background="@drawable/style_divider" />
+
+			<ImageButton android:layout_width="48dp"
+				android:background="@drawable/style_button_center"
+				android:scaleType="center" android:id="@+id/windowResizeBtn"
+				android:src="@drawable/ic_btn_max_win" android:layout_height="fill_parent"></ImageButton>
+
+			<ImageView android:layout_width="1dp"
+				android:layout_height="fill_parent" android:background="@drawable/style_divider" />
+
+			<ImageButton android:layout_width="48dp"
+				android:background="@drawable/style_button_center"
+				android:scaleType="center" android:id="@+id/windowCloseBtn"
+				android:src="@drawable/ic_btn_close" android:layout_height="fill_parent"></ImageButton>
+		</LinearLayout>
+
+		<View android:layout_width="fill_parent" android:background="#FF000000"
+			android:id="@+id/lineView2" android:layout_height="1dp"></View>
+
+		<WebView android:id="@+id/dictContentWindow"
+			android:layout_weight="2" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:focusable="true"
+			android:focusableInTouchMode="true"></WebView>
+
+		<View android:layout_width="fill_parent" android:background="#FF000000"
+			android:id="@+id/lineView3" android:layout_height="1dp"></View>
+	</LinearLayout>
+
+	<View android:layout_width="1dp" android:background="#FF000000"
+		android:id="@+id/lineView4" android:layout_height="fill_parent"></View>
+
+</LinearLayout>

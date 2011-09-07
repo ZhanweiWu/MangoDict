@@ -6,7 +6,6 @@
 *.exe
 *.o
 *.so
-*.project
 
 # Packages #
 ############
@@ -33,3 +32,33 @@
 ehthumbs.db
 Icon?
 Thumbs.db
+
+# Android auto files #
+*.launch
+*.externalToolBuilders
+*.prefs
+*.settings
+*.class
+*.dex
+*.apk
+*.ap_
+
+# VS.NET auto files #
+MangoDict.lib
+BuildLog.htm
+gdbserver
+app_process
+*.ncb
+*.ex*
+*.ilk
+*.pdb
+*.user
+*.obj
+*.manifest
+*.manifest.*
+*.pch
+*.res
+*.dep
+*.idb
+*.setup
+*.o.d

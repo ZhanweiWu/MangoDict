@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Mango Dictionary</string>
+    <string name="memorize_name">Mango Memorize</string>
+    <string name="fuzzy_query_prompt">Press words list button to fuzzy query this word.</string>
+    <string name="fulltext_query_prompt">Press words list button to full text query this word.</string>
+    <string name="pattern_query_prompt">Press words list button to pattern query this word.</string>
+    <string name="keywords_null">Not found any words.</string>
+    <string name="spell_error">There are too many spelling errors :-(</string>
+    <string name="keywords_search">Searching...</string>
+    <string name="readme_text">How to use:&lt;br&gt;&lt;br&gt;
+       1. Glob-style pattern matching:&lt;br&gt;
+       You can input strings containing \'*\' (wildcard) and \'?\' (joker) as the pattern. \'*\' matches an arbitrary, possibly empty, string, and \'?\' matches an arbitrary character. After pressing words list button, the words that match this pattern will be shown in the list.&lt;br&gt;&lt;br&gt;
+       2. Fuzzy query:&lt;br&gt;
+       When you can\'t remember how to spell a word exactly, you can try Fuzzy query. It uses \"Levenshtein Edit Distance\" to compute the similarity between two words, and gives the match results which are most similar to the word that you input. To create a fuzzy query, just input the word with a beginning \"/\", and then press words list button.&lt;br&gt;&lt;br&gt;
+       3. Full-text search:&lt;br&gt;
+       Full-text search searches for a word in the data. To create a Full-text search, just input the word with a beginning \":\", and then press words list button. For example, \":ab cd\" searches data which contain both \"ab\" and \"cd\". If the words contain space character, you can use \"\\ \", such as \":apple\\ pie\", other escaping characters are \"\\\\\" for \'\\ \', \"\\t\" for Tab and \"\\n\" for new line.&lt;br&gt;&lt;br&gt;
+       Project : http://code.google.com/p/mangodict/ &lt;br&gt;
+       Author : Zhanwei Wu &lt;br&gt;
+       EMail : jeffrey.wuzw@gmail.com &lt;br&gt;
+       MSN : wingfancy@hotmail.com &lt;br&gt;
+       Copyright © 2011 by Zhanwei WU
+    </string>
+    <string name="setting">Setting</string>
+    <string name="capture">Capture</string>
+    <string name="index">Index</string>
+    <string name="memorize">Memorize</string>
+    <string name="play_word">Play word</string>
+    <string name="play_text">Play clipboard</string>
+    <string name="his_words">History words</string>
+    <string name="add_word">Add word</string>
+    <string name="new_words">New words</string>
+    <string name="findonpage">Find on page</string>
+    <string name="cancel">Cancel</string>
+    <string name="dictpath">Path...</string>
+    <string name="bgcolor">Background</string>
+    <string name="textcolor">Text</string>
+    <string name="wordcolor">Word</string>
+    <string name="sampletext">Sample Text</string>
+    <string name="wordtext">Word Text</string>
+    <string name="dictiscapture">Translate Clipboard Text</string>
+    <string name="saved">Saved!</string>
+    <plurals name="matches_found">
+        <item quantity="zero">No matches</item>
+        <item quantity="one">1 match</item>
+        <item quantity="few"><xliff:g id="number" example="2">%d</xliff:g> matches</item>
+        <item quantity="other"><xliff:g id="number" example="137">%d</xliff:g> matches</item>
+    </plurals>
+
+    <string name="recording">Recording...</string>
+    <string name="press_record">Press record</string>
+    <string name="playing">Playing...</string>
+
+    <string name="grade_F">  Null  </string>
+    <string name="grade_E">  Poor  </string>
+    <string name="grade_D">Marginal</string>
+    <string name="grade_C">  Fair  </string>
+    <string name="grade_B">  Good  </string>
+    <string name="grade_A">Excellent</string>
+    <string name="showanswer">Show Answer</string>
+    <string name="memorizeselect">Select Memorize</string>
+    <string name="learnscheduledcard">Scheduled Cards</string>
+    <string name="learnnewcard">New Cards</string>
+    <string name="learnaheadcard">Ahead Cards</string>
+    <string name="memerizeconfig">Configuration</string>
+    <string name="schedule">Schedule</string>
+    <string name="statistic">Statistic</string>
+    <string name="noschedulecard">No scheduled card to be learnt, do you want to learn new card?</string>
+    <string name="nonewcard">No new card to be learnt, do you want to learn ahead card?</string>
+    <string name="nocard">No card to be learnt, do you want to select another memorize lesson?</string>
+    <string name="numbergrade0">Number of grade 0 cards: </string>
+    <string name="maxnewcards">Number of new cards: </string>
+    <string name="maxcards">Number of total cards: </string>
+    <string name="randomnewcards">Random new cards: </string>
+
+    <string name="grade_info">Cards with grades: </string>
+    <string name="grade0">Grade 0: </string>
+    <string name="grade1">Grade 1: </string>
+    <string name="grade2">Grade 2: </string>
+    <string name="grade3">Grade 3: </string>
+    <string name="grade4">Grade 4: </string>
+    <string name="grade5">Grade 5: </string>
+
+    <string name="card_info">Current card information: </string>
+    <string name="grade">Grade: </string>
+    <string name="easiness">Easiness: </string>
+    <string name="repetitions">Repetitions: </string>
+    <string name="lapses">Lapses: </string>
+    <string name="dayssincelastrep">Days since last repetition: </string>
+    <string name="dayssincenextrep">Days until next repetition: </string>
+    
+    <string name="progress">Progress: </string>
+    <string name="dateofstart">Start date: </string>
+    <string name="date_format">dd MMMM yyyy</string>
+
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Color Picker</string>
+    <string name="press_color_to_apply">Press on Color to apply</string>
+
+</resources>

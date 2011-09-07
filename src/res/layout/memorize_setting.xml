@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:padding="3dp" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<TableLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:stretchColumns="1">
+
+		<TableRow>
+			<TextView android:text="@string/numbergrade0"
+				android:textStyle="bold" android:gravity="right" android:padding="3dp" />
+
+			<EditText android:id="@+id/grade0Cards" android:padding="3dp" android:layout_width="wrap_content"
+				android:scrollHorizontally="true" android:inputType="numberSigned"
+				android:maxLength="3" />
+		</TableRow>
+
+		<TableRow>
+			<TextView android:text="@string/maxnewcards"
+				android:textStyle="bold" android:gravity="right" android:padding="3dp" />
+
+			<EditText android:id="@+id/maxNewCards" android:padding="3dp" android:layout_width="wrap_content"
+				android:scrollHorizontally="true" android:inputType="numberSigned"
+				android:maxLength="3" />
+		</TableRow>
+
+		<TableRow>
+			<TextView android:text="@string/maxcards" android:textStyle="bold"
+				android:gravity="right" android:padding="3dp" />
+
+			<EditText android:id="@+id/maxCards" android:padding="3dp" android:layout_width="wrap_content"
+				android:scrollHorizontally="true" android:inputType="numberSigned"
+				android:maxLength="3" />
+		</TableRow>
+
+		<TableRow>
+			<TextView android:text="@string/randomnewcards"
+				android:textStyle="bold" android:gravity="right" android:padding="3dp" />
+			<CheckBox android:id="@+id/randomNewCards"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"></CheckBox>
+		</TableRow>
+	</TableLayout>
+
+	<LinearLayout android:gravity="center"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		
+		<ImageButton android:id="@+id/buttonConfirm" android:src="@drawable/ic_btn_ok"
+			android:layout_height="fill_parent" style="@android:style/MediaButton" />
+		<ImageButton android:id="@+id/buttonCancle" android:src="@drawable/ic_btn_cancel"
+			android:layout_height="fill_parent" style="@android:style/MediaButton" />
+			
+	</LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<LinearLayout android:id="@+id/parentView"
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+		<LinearLayout android:orientation="horizontal"
+			android:id="@+id/dictToolBarLayout" android:layout_width="fill_parent"
+			android:visibility="gone" android:layout_height="wrap_content">
+		</LinearLayout>
+
+		<LinearLayout android:orientation="horizontal"
+			android:id="@+id/dictSearchBarLayout" android:layout_width="fill_parent"
+			android:layout_height="42dp" android:background="@drawable/style_bg">
+			<ImageButton android:id="@+id/dictWordsViewBtn"
+				android:background="@drawable/style_button_center"
+				android:scaleType="center" android:src="@drawable/ic_btn_viewwords"
+				android:layout_width="48dp" android:layout_height="fill_parent"></ImageButton>
+
+			<ImageView android:layout_width="1dp"
+				android:layout_height="fill_parent" android:background="@drawable/style_divider" />
+
+			<ImageButton android:id="@+id/dictSearchBtn"
+				android:background="@drawable/style_button_center"
+				android:scaleType="center" android:src="@drawable/ic_btn_search"
+				android:layout_width="48dp" android:layout_height="fill_parent"></ImageButton>
+
+			<ImageView android:layout_width="1dp"
+				android:layout_height="fill_parent" android:background="@drawable/style_divider" />
+
+			<ImageButton android:id="@+id/dictWordsListBtn"
+				android:background="@drawable/style_button_right"
+				android:scaleType="center" android:src="@drawable/ic_btn_wordslist"
+				android:layout_width="48dp" android:layout_height="fill_parent"></ImageButton>
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<WebView android:id="@+id/dictContentView"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"></WebView>
+</LinearLayout>

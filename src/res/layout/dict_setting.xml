@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent">
+
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:orientation="vertical"
+			android:layout_weight="1">
+			<LinearLayout android:orientation="horizontal"
+				android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+				<Button android:id="@+id/dictPathBtn" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="@string/dictpath"></Button>
+				<TextView android:id="@+id/dictPathTxt"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+			</LinearLayout>
+
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content">
+				<CheckBox android:id="@+id/dictIsCaptureBox"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="@string/dictiscapture"></CheckBox>
+			</LinearLayout>
+
+			<LinearLayout android:orientation="horizontal"
+				android:layout_height="wrap_content" android:layout_width="fill_parent">
+				<Button android:id="@+id/bgColorBtn" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="@string/bgcolor"></Button>
+				<Button android:id="@+id/textColorBtn" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="@string/textcolor"></Button>
+				<Button android:id="@+id/wordColorBtn" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="@string/wordcolor"></Button>
+			</LinearLayout>
+
+			<LinearLayout android:orientation="horizontal"
+				android:layout_height="30dp" android:layout_width="fill_parent">
+				<TextView android:id="@+id/sampleText" android:text="@string/sampletext"
+					android:padding="3dp" android:layout_width="fill_parent"
+					android:layout_weight="1" android:layout_height="fill_parent" />
+				<TextView android:id="@+id/wordText" android:text="@string/wordtext"
+					android:padding="3dp" android:layout_width="fill_parent"
+					android:layout_weight="1" android:layout_height="fill_parent" />
+			</LinearLayout>
+		</LinearLayout>
+
+		<LinearLayout android:gravity="center"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<ImageButton android:id="@+id/buttonConfirm" android:src="@drawable/ic_btn_ok"
+				android:layout_height="fill_parent" style="@android:style/MediaButton" />
+			<ImageButton android:id="@+id/buttonCancle" android:src="@drawable/ic_btn_cancel"
+				android:layout_height="fill_parent" style="@android:style/MediaButton" />
+
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>

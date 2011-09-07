@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+	<com.mango.MangoDict.TouchInterceptor
+		android:id="@android:id/list" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_weight="1">
+	</com.mango.MangoDict.TouchInterceptor>
+
+	<LinearLayout android:gravity="center"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<ImageButton android:id="@+id/buttonConfirm" android:src="@drawable/ic_btn_ok"
+			android:layout_height="fill_parent" style="@android:style/MediaButton" />
+		<ImageButton android:id="@+id/buttonCancle" android:src="@drawable/ic_btn_cancel"
+			android:layout_height="fill_parent" style="@android:style/MediaButton" />
+
+	</LinearLayout>
+</LinearLayout>
