@@ -16,15 +16,18 @@
                   当你记不清楚某个单词的具体拼写时，还可以尝试模糊查询。此方式使用“Levenshtein Edit Distance”计算两个单词的相似度，最后给出和输入单词最相似的匹配结果，你只需在所查的单词前加一个“/”，按下单词列表按钮即可。&lt;br&gt;&lt;br&gt;
        3. 全文检索:&lt;br&gt;
                   全文检索在数据里搜索单词。要进行全文检索，只需在所查的单词前加一个“:”，然后按下单词列表按钮。比如，“:ab cd”搜索包含“ab”和“cd”的数据。如果单词里有空格符，你可以使用“\\ ”，比如“:apple\\ pie”，其它的转义字符是“\\\\”表示“\\”，“\\t”表示制表符，“\\n”表示新行。&lt;br&gt;&lt;br&gt;
-                  用户手册： &lt;br&gt;
-       http://zhanweiwu.github.com/zh-cn.html &lt;br&gt;
-                  项目地址： &lt;br&gt;
-       https://github.com/zhanweiwu/mangodict/ &lt;br&gt;
-                  作者：吴占伟(Zhanwei Wu) &lt;br&gt;
-                  邮件：jeffrey.wuzw@gmail.com &lt;br&gt;
-       MSN : wingfancy@hotmail.com &lt;br&gt;
+                  请查看“用户手册”了解更详细的说明： &lt;br&gt;
+       http://zhanweiwu.github.com/zh-cn.html &lt;br&gt;&lt;br&gt;
+    </string>
+    <string name="aboutinfo">
+                  项目： \r\n
+       https://github.com/zhanweiwu/mangodict/ \r\n\r\n
+                  作者：吴占伟(Zhanwei WU) \r\n
+                  邮件：jeffrey.wuzw@gmail.com \r\n
+       MSN : wingfancy@hotmail.com \r\n\r\n
        Copyright © 2011 by Zhanwei WU
     </string>
+    <string name="about">关于</string>
     <string name="setting">设置</string>
     <string name="capture">取词</string>
     <string name="index">索引</string>

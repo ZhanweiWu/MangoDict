@@ -3,6 +3,7 @@ package com.mango.MangoDict;
 import java.lang.reflect.Method;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -54,6 +55,7 @@ public class MangoDictActivity extends Activity {
 	final int MENU_SETTING 			= MENU_PLAYWORD + 5;
 	final int MENU_FINDONPAGE		= MENU_PLAYWORD + 6;
 	final int MENU_ADDWORD			= MENU_PLAYWORD + 7;
+	final int MENU_ABOUT			= MENU_PLAYWORD + 8;
 
 	public static WordsFileUtils mWordsFileUtilsHis = null;
 	public static WordsFileUtils mWordsFileUtilsNew = null;
@@ -531,7 +533,8 @@ public class MangoDictActivity extends Activity {
 		menu.add(0, MENU_FINDONPAGE, 0, R.string.findonpage).setIcon(R.drawable.ic_btn_findonpage);
 		menu.add(0, MENU_SETTING, 0, R.string.setting).setIcon(R.drawable.ic_btn_setting);
 		menu.add(0, MENU_MEMORIZE, 0, R.string.memorize).setIcon(R.drawable.ic_btn_memorize);
-
+		menu.add(0, MENU_ABOUT, 0, R.string.about).setIcon(R.drawable.ic_btn_file);
+		
 		return true;
 	}
 
@@ -612,6 +615,15 @@ public class MangoDictActivity extends Activity {
             	{
 	            	mWordsFileUtilsNew.addWord(word);
             	}
+	        	break;
+	        }
+	        
+	        case MENU_ABOUT:
+	        {
+	            new AlertDialog.Builder(this)
+                .setTitle(R.string.about)
+                .setMessage(R.string.aboutinfo)
+                .show();
 	        	break;
 	        }
         }
