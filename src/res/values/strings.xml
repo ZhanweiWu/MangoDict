@@ -16,7 +16,10 @@
        When you can\'t remember how to spell a word exactly, you can try Fuzzy query. It uses \"Levenshtein Edit Distance\" to compute the similarity between two words, and gives the match results which are most similar to the word that you input. To create a fuzzy query, just input the word with a beginning \"/\", and then press words list button.&lt;br&gt;&lt;br&gt;
        3. Full-text search:&lt;br&gt;
        Full-text search searches for a word in the data. To create a Full-text search, just input the word with a beginning \":\", and then press words list button. For example, \":ab cd\" searches data which contain both \"ab\" and \"cd\". If the words contain space character, you can use \"\\ \", such as \":apple\\ pie\", other escaping characters are \"\\\\\" for \'\\ \', \"\\t\" for Tab and \"\\n\" for new line.&lt;br&gt;&lt;br&gt;
-       Project : https://github.com/zhanweiwu/mangodict/ &lt;br&gt;
+       User Guide :  &lt;br&gt;
+       http://zhanweiwu.github.com/ &lt;br&gt;
+       Project :  &lt;br&gt;
+       https://github.com/zhanweiwu/mangodict/ &lt;br&gt;
        Author : Zhanwei Wu &lt;br&gt;
        EMail : jeffrey.wuzw@gmail.com &lt;br&gt;
        MSN : wingfancy@hotmail.com &lt;br&gt;

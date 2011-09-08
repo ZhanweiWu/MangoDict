@@ -58,7 +58,7 @@ public class TouchInterceptor extends ListView {
 
     public TouchInterceptor(Context context, AttributeSet attrs) {
         super(context, attrs);
-        mRemoveMode = SLIDE;
+        mRemoveMode = TRASH;
         mTouchSlop = ViewConfiguration.get(context).getScaledTouchSlop();
         Resources res = getResources();
         mItemHeightNormal = res.getDimensionPixelSize(R.dimen.normal_height);
@@ -336,7 +336,7 @@ public class TouchInterceptor extends ListView {
                             }
                         }
                         if (speed != 0) {
-                            smoothScrollBy(speed, 30);
+                            //smoothScrollBy(speed, 30);
                         }
                     }
                     break;
@@ -390,6 +390,7 @@ public class TouchInterceptor extends ListView {
         }
 
         if (mRemoveMode == FLING || mRemoveMode == TRASH) {
+        	mWindowParams.alpha = 0.5f;
             mWindowParams.x = x - mDragPointX + mXOffset;
         } else {
             mWindowParams.x = 0;

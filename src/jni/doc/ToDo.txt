@@ -8,7 +8,6 @@ Check the heap spend.
 播放单词声音文件。
 Speech可选择所使用的语言。
 
-尝试支持更低版本的Android手机。目前支持2.2(API 8)及以上版本。
 语音识别。
 软件在线评价及建议。
 
@@ -51,6 +50,7 @@ Use Theme/style, dimension, color resources to reduce redundancy.
 中文资源。
 查词取词界面可设置背景颜色，字体颜色及查询单词颜色。
 Support other stardict format, such as KingSoft/xdxf and so on.
+Support SDK 2.1(API 7)
 
 
 REMOVED TASKS:

@@ -16,8 +16,11 @@
                   當你記不清楚某個單詞的具體拼寫時，還可以嘗試模糊查詢。此方式使用「Levenshtein Edit Distance」計算兩個單詞的相似度，最後給出和輸入單詞最相似的匹配結果，你只需在所查的單詞前加一個「/」，按下單詞列表按鈕即可。&lt;br&gt;&lt;br&gt;
        3. 全文檢索:&lt;br&gt;
                   全文檢索在數據裡搜索單詞。要進行全文檢索，只需在所查的單詞前加一個「:」，然後按下單詞列表按鈕。比如，「:ab cd」搜索包含「ab」和「cd」的數據。如果單詞裡有空格符，你可以使用「\\ 」，比如「:apple\\ pie」，其它的轉義字符是「\\\\」表示「\\」，「\\t」表示製表符，「\\n」表示新行。&lt;br&gt;&lt;br&gt;
-                  項目：https://github.com/zhanweiwu/mangodict/ &lt;br&gt;
-                  作者：Zhanwei Wu &lt;br&gt;
+                  用戶手冊： &lt;br&gt;
+       http://zhanweiwu.github.com/zh-tw.html &lt;br&gt;
+                  項目地址： &lt;br&gt;
+       https://github.com/zhanweiwu/mangodict/ &lt;br&gt;
+                  作者：吳占偉(Zhanwei Wu) &lt;br&gt;
                   郵件：jeffrey.wuzw@gmail.com &lt;br&gt;
        MSN : wingfancy@hotmail.com &lt;br&gt;
        Copyright c 2011 by Zhanwei WU
