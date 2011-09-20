@@ -1,7 +1,6 @@
 TODO:
 
 
-Release the code with documents.
 
 Check the heap spend.
 计划界面可根据屏幕尺寸设置不同大小。
@@ -50,7 +49,8 @@ Use Theme/style, dimension, color resources to reduce redundancy.
 中文资源。
 查词取词界面可设置背景颜色，字体颜色及查询单词颜色。
 Support other stardict format, such as KingSoft/xdxf and so on.
-Support SDK 2.1(API 7)
+Support SDK 1.6(API Level: 4)
+Release the code with documents.
 
 
 REMOVED TASKS:

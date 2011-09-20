@@ -9,6 +9,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.os.Environment;
 import android.util.DisplayMetrics;
 import android.view.WindowManager;
 import android.webkit.WebView;
@@ -448,6 +449,24 @@ public class MangoDictUtils {
 
     //-----------------------------------------------------------------------------------------------------//
 	// Public static class
+    
+	public static String getSDCardPath() {
+		File SDCardFolder = null;
+		boolean SDCardExist = Environment.getExternalStorageState().equals(
+				android.os.Environment.MEDIA_MOUNTED);
+		
+		MyLog.v("MangoDict", "getSDCardPath()");
+		
+		if (SDCardExist) {
+			SDCardFolder = Environment.getExternalStorageDirectory();
+
+			MyLog.v("MangoDict", "getSDCardPath()::SDCardFolder=" + SDCardFolder.toString());
+
+			return SDCardFolder.toString();
+		}
+
+		return null;
+	}
     
     public static double roundDouble(double value, int scale, int roundingMode) {  
         BigDecimal bd = new BigDecimal(value);  

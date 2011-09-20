@@ -22,11 +22,13 @@ public class WordsFileUtils {
 
 	private String mPath = null;
 	private String mName = null;
+	private boolean mChanged = false; 
 	private ArrayList<String> mWordsArrayList = null;
 
 	public WordsFileUtils(String path, String name) {
 		mPath = path;
 		mName = name;
+		mChanged = false;
 		String[] wordsList = null;
 
 		MyLog.v(TAG, "WordsFileUtils()::path=" + mPath);
@@ -37,13 +39,6 @@ public class WordsFileUtils {
 		{
 			return;
 		}
-
-		File f = new File(path);
-		if(!f.exists())
-		{
-			f.mkdirs();
-		}
-		f = null;
 
 		String data = read();
 		if(null == data)
@@ -66,7 +61,14 @@ public class WordsFileUtils {
 	
 	public void addWord(String word) {
 		String newword = word.replace(";", ""); // remove ';' if it exists in the word.
+		
+		if(newword.length() <= 0)
+		{
+			return;
+		}
 
+		mChanged = true;
+		
 		mWordsArrayList.remove(newword);
 
     	if (mWordsArrayList.size() > MAX_COUNT)
@@ -91,13 +93,19 @@ public class WordsFileUtils {
 			return;
 		}
 
-    	if(cnt <= 0)
+    	if(cnt <= 0 || false == mChanged)
     	{
     		return;
     	}
     	
     	if (cnt > MAX_COUNT)
     		cnt = MAX_COUNT;
+
+		File folder = new File(mPath);
+		if(!folder.exists())
+		{
+			folder.mkdirs();
+		}
 
     	for (int i = 0; i < cnt; i++)
     	{

@@ -419,6 +419,8 @@ public class MangoDictActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+		MyLog.v(TAG, "onCreate");
+
         setContentView(R.layout.main);
 
        	mMangoDictUtils = new MangoDictUtils(this);
@@ -651,6 +653,18 @@ public class MangoDictActivity extends Activity {
 			}
 		}
 	}
+	
+    @Override
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		MyLog.v(TAG, "onKeyDown()");
+
+		if (keyCode == KeyEvent.KEYCODE_BACK && mDictKeywordsPopup.isShowing()) {
+			mDictKeywordsPopup.dismiss();
+			return true;
+		}
+
+		return super.onKeyDown(keyCode, event);
+	}
 
 	@Override
 	protected void onPause() {
@@ -780,9 +794,10 @@ public class MangoDictActivity extends Activity {
         }
     }
 
+
     //-----------------------------------------------------------------------------------------------------//
-    
-    // Extend classes.
+
+	// Extend classes.
     private class DictEditTextView extends EditText {
         public DictEditTextView(Context context) {
             super(context, null);
@@ -794,16 +809,17 @@ public class MangoDictActivity extends Activity {
                 // special case for the back key, we do not even try to send it
                 // to the drop down list but instead, consume it immediately
                 if (event.getAction() == KeyEvent.ACTION_DOWN && event.getRepeatCount() == 0) {
-                    getKeyDispatcherState().startTracking(event, this);
-                    return true;
+                    // getKeyDispatcherState().startTracking(event, this);
+                     return true;
                 } else if (event.getAction() == KeyEvent.ACTION_UP) {
-                    getKeyDispatcherState().handleUpEvent(event);
-                    if (event.isTracking() && !event.isCanceled()) {
+                    //getKeyDispatcherState().handleUpEvent(event);
+                    //if (event.isTracking() && !event.isCanceled()) {
                     	mDictKeywordsPopup.dismiss();
                         return true;
-                    }
+                    //}
                 }
             }
+
             return super.onKeyPreIme(keyCode, event);
         }
 

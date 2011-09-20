@@ -24,7 +24,7 @@ public class MangoDictEng {
 	final static String DICT_SETTING_MEMORIZE_ALL		= "DictMemorizeALL";
 	final static String DICT_SETTING_ISCAPTURE			= "DictIsCapture";
 
-	final static String DICT_DEFAULT_PATH 				= "/sdcard";
+	final static String DICT_DEFAULT_PATH 				= MangoDictUtils.getSDCardPath();
 
 	final static int DICT_TYPE_INDEX 			= 0x0001;
 	final static int DICT_TYPE_CAPTURE 			= 0x0010;

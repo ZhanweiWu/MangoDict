@@ -33,7 +33,7 @@ public class PathSelectActivity extends ListActivity {
 	public static final String SELECT_TYPE		= "SELECT_TYPE";
 	public static final String CLASS_NAME		= "CLASS_NAME";
 	
-	private String rootPath = "/sdcard";
+	private String rootPath = MangoDictUtils.getSDCardPath();
 	private String curPath = null;
 
 	private TextView mDictPath = null;

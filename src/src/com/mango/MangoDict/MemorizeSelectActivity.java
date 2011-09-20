@@ -159,7 +159,7 @@ public class MemorizeSelectActivity extends ListActivity {
 
 				Bundle bundle = new Bundle();
 				
-				bundle.putString(PathSelectActivity.DEFAULT_PATH, "/sdcard");
+				bundle.putString(PathSelectActivity.DEFAULT_PATH, MangoDictUtils.getSDCardPath());
 				bundle.putString(PathSelectActivity.CLASS_NAME, "MemorizeSelectActivity");
 				bundle.putInt(PathSelectActivity.SELECT_TYPE, PathSelectActivity.SELECT_TYPE_FILE);
 
